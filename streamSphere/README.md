@@ -6,11 +6,9 @@ A modern Next.js application for managing and selling video content using ImageK
 
 -  User Authentication (NextAuth.js)
 -  Video Upload and Management (ImageKit)
--  Payment Processing (Razorpay)
 -  Modern UI with Tailwind CSS and DaisyUI
 -  Fully Responsive Design
 -  Secure API Routes
--  Email Notifications (Nodemailer)
 -  MongoDB Database Integration
 
 ## Tech Stack
@@ -20,8 +18,6 @@ A modern Next.js application for managing and selling video content using ImageK
 - **Authentication**: NextAuth.js, JWT
 - **Database**: MongoDB with Mongoose
 - **File Storage**: ImageKit
-- **Payment**: Razorpay
-- **Email**: Nodemailer
 - **Form Handling**: React Hook Form
 
 ## Prerequisites
@@ -29,8 +25,7 @@ A modern Next.js application for managing and selling video content using ImageK
 - Node.js (Latest LTS version)
 - MongoDB Database
 - ImageKit Account
-- Razorpay Account
-- SMTP Server (for email notifications)
+
 
 ## Getting Started
 
@@ -61,28 +56,7 @@ npm run dev
 Create a `.env` file with the following variables:
 
 ```env
-# Database
-MONGODB_URI=
 
-# Authentication
-NEXTAUTH_SECRET=
-NEXTAUTH_URL=
-
-# ImageKit
-IMAGEKIT_PUBLIC_KEY=
-IMAGEKIT_PRIVATE_KEY=
-IMAGEKIT_URL_ENDPOINT=
-
-# Razorpay
-RAZORPAY_KEY_ID=
-RAZORPAY_KEY_SECRET=
-
-# Email (SMTP)
-SMTP_HOST=
-SMTP_PORT=
-SMTP_USER=
-SMTP_PASS=
-```
 
 ## Available Scripts
 
@@ -91,7 +65,7 @@ SMTP_PASS=
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 - `npm run seed` - Seed the database
-- `npm run mailtrap` - Test email configuration
+
 
 ## Project Structure
 
@@ -108,14 +82,4 @@ SMTP_PASS=
 └── types.d.ts         # TypeScript declarations
 ```
 
-## Contributing
 
-NO CONTRIBUTING PLEASE!
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support, watch youtube video
